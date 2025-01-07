@@ -5,6 +5,22 @@
 
 [comment]: # (release notes start)
 
+Apolo 25.1.0 (2025-01-07)
+=========================
+
+# Apolo SDK/CLI 24.12.3 (2024-12-19)
+
+### Bugfixes
+
+- Fix S3 acceess by dropping aiobotocore patching and using public API instead. ([#3155](https://github.com/neuro-inc/neuro-cli/issues/3155))
+
+
+# Apolo SDK/CLI 24.12.2 (2024-12-18)
+
+No significant changes.
+
+
+
 Apolo 24.12.1 (2024-12-17)
 ==========================
 
@@ -12,6 +28,8 @@ Apolo 24.12.1 (2024-12-17)
 
 ### Features
 
+- Added cluster-bound apps configuration into the SDK. ([#3142](https://github.com/neuro-inc/neuro-cli/issues/3142))
+- Prefer `.apolo` configuration folder and `.apoloignore` files and folders over old `.neuro` based names; old names are still supported. ([#3145](https://github.com/neuro-inc/neuro-cli/issues/3145))
 - Balance is no longer stored on a cluster level, and was moved to an organization level, e.g.,
   to an org itself, and to an org users, instead of a cluster / cluster users.
 
