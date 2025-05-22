@@ -5,6 +5,40 @@
 
 [comment]: # (release notes start)
 
+Apolo 25.5.0 (2025-05-22)
+=========================
+
+# Apolo SDK/CLI 25.5.0 (2025-05-15)
+
+### Features
+
+- Added new command `apolo app logs [id]` - view logs from a running app ([#3249](https://github.com/neuro-inc/neuro-cli/issues/3249))
+
+
+# Apolo SDK/CLI 25.4.2 (2025-04-30)
+
+### Features
+
+- Added new command `apolo app-template ls` - list available app templates for installation ([#3227](https://github.com/neuro-inc/neuro-cli/issues/3227))
+- Added new command `apolo app-template ls-versions` - list available app templates for specific versions ([#3228](https://github.com/neuro-inc/neuro-cli/issues/3228))
+- Added new aliases for: `apolo app list|ls`, `apolo app-template list|ls`, `apolo app-template list-versions|ls-versions` ([#3233](https://github.com/neuro-inc/neuro-cli/issues/3233))
+- Added new command `apolo app get-values` - list available values that can be reused for installation ([#3236](https://github.com/neuro-inc/neuro-cli/issues/3236))
+
+
+# Apolo SDK/CLI 25.4.1 (2025-04-01)
+
+### Features
+
+- Added new command: `apolo app ls` - list installed apps ([#3199](https://github.com/neuro-inc/neuro-cli/issues/3199))
+- Added new command: `apolo app uninstall` - uninstall app ([#3201](https://github.com/neuro-inc/neuro-cli/issues/3201))
+- Added new command: `apolo app install -f [yml_file]` - install app ([#3204](https://github.com/neuro-inc/neuro-cli/issues/3204))
+
+### Bugfixes
+
+- Eliminated backtracing in regexes for job, disk, and bucket name validators. ([#3217](https://github.com/neuro-inc/neuro-cli/issues/3217))
+
+
+
 Apolo 25.1.0 (2025-01-07)
 =========================
 
