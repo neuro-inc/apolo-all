@@ -53,7 +53,7 @@ apolo-cli = "24.12.3"
 apolo-extras = "24.10.0"
 apolo-flow = "24.12.1"
 certifi = "2024.12.14"
-apolo-sdk = "24.12.3"
+apolo-sdk = "25.5.0"
 
 [tool.poetry.dev-dependencies]
 pytest = "8.1.1"
