@@ -5,6 +5,17 @@
 
 [comment]: # (release notes start)
 
+Apolo 25.7.1 (2025-07-11)
+=========================
+
+# Apolo SDK/CLI 25.7.2 (2025-07-11)
+
+### Misc
+
+- [#3297](https://github.com/neuro-inc/apolo-cli/issues/3297)
+
+
+
 Apolo 25.7.0 (2025-07-11)
 =========================
 

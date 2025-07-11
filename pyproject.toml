@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "apolo-all"
-version = "25.7.0"
+version = "25.7.1"
 description = "Combo package for installing all Apolo command line tools by 'pipx install apolo-all' command"
 authors = ["Apolo Team <dev@apolo.us>"]
 license = "Apache-2.0"
@@ -55,13 +55,11 @@ apolo-flow = "24.12.1"
 certifi = "2025.7.14"
 apolo-sdk = "25.7.2"
 
-[tool.poetry.dev-dependencies]
+[tool.poetry.group.dev.dependencies]
+towncrier = "^24.8.0"
 pytest = "8.4.1"
 pre-commit = "^4.2.0"
 click = "^8.1.7"
-
-[tool.poetry.group.dev.dependencies]
-towncrier = "^24.8.0"
 
 [build-system]
 requires = ["poetry-core>=1.0.0"]
