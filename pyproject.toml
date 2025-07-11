@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "apolo-all"
-version = "25.5.0"
+version = "25.7.0"
 description = "Combo package for installing all Apolo command line tools by 'pipx install apolo-all' command"
 authors = ["Apolo Team <dev@apolo.us>"]
 license = "Apache-2.0"
