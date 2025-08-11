@@ -272,14 +272,14 @@ yarl = ">=1.13"
 
 [[package]]
 name = "apolo-sdk"
-version = "25.7.2"
+version = "25.8.0"
 description = "Apolo SDK"
 optional = false
 python-versions = ">=3.9.0"
 groups = ["main"]
 files = [
-    {file = "apolo_sdk-25.7.2-py3-none-any.whl", hash = "sha256:c33f5fab191fc69d5a06a0abc8b6e079260d3a7df58982cbd6f120b1bd2e8bd4"},
-    {file = "apolo_sdk-25.7.2.tar.gz", hash = "sha256:b3b405711a45d30a723d6b84a66fb952782dc97f9c84cda7acc3fde05c5a74cc"},
+    {file = "apolo_sdk-25.8.0-py3-none-any.whl", hash = "sha256:9667d91af22fe4d1feeacd076e85bc16f750d497545569b9bc438e418e3a43e0"},
+    {file = "apolo_sdk-25.8.0.tar.gz", hash = "sha256:bd868d758d352a07d502f769ba6ec20fa9dfeff34ce28767ac425e4016dc7c07"},
 ]
 
 [package.dependencies]
@@ -2362,4 +2362,4 @@ type = ["pytest-mypy"]
 [metadata]
 lock-version = "2.1"
 python-versions = "^3.9.0"
-content-hash = "3aaea8a89531aa8345a9728119cd4b7fe7a31f7dbf885f44ccad3f6b7b579f24"
+content-hash = "377fe3f93eeb125e277466d7646740fff36bbeff5f5831e0f003557c379a112c"
