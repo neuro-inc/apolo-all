@@ -18,7 +18,7 @@ jobs:
       version: ${{ steps.version.outputs.version }}
     steps:
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
       - name: Setup Python 3.9
         uses: actions/setup-python@v5
         with:
@@ -62,7 +62,7 @@ jobs:
       pull-requests: write
     steps:
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
       - name: metadata
         id: metadata
         if: github.actor == 'dependabot[bot]'
@@ -93,7 +93,7 @@ jobs:
             echo "Tag matches version ${{ needs.lint.outputs.version }}"
           fi
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
       - name: Setup Python
         uses: actions/setup-python@v5
         with:
