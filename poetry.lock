@@ -272,14 +272,14 @@ yarl = ">=1.13"
 
 [[package]]
 name = "apolo-sdk"
-version = "25.8.0"
+version = "25.8.1"
 description = "Apolo SDK"
 optional = false
 python-versions = ">=3.9.0"
 groups = ["main"]
 files = [
-    {file = "apolo_sdk-25.8.0-py3-none-any.whl", hash = "sha256:9667d91af22fe4d1feeacd076e85bc16f750d497545569b9bc438e418e3a43e0"},
-    {file = "apolo_sdk-25.8.0.tar.gz", hash = "sha256:bd868d758d352a07d502f769ba6ec20fa9dfeff34ce28767ac425e4016dc7c07"},
+    {file = "apolo_sdk-25.8.1-py3-none-any.whl", hash = "sha256:49f8ee70c301333b06f3617c09d25c14654d9eeedd0aefe329cbf8d5d196fb77"},
+    {file = "apolo_sdk-25.8.1.tar.gz", hash = "sha256:f22a7370e95576893a081a78bc624741e478e5b28f6c3ca64a4261ae046cd8bd"},
 ]
 
 [package.dependencies]
@@ -291,7 +291,7 @@ certifi = "*"
 google-auth = ">=2.0.2"
 importlib_metadata = {version = ">=4.11.4", markers = "python_version < \"3.11\""}
 neuro-admin-client = ">=24.12.2"
-neuro-config-client = ">=24.12.4"
+neuro-config-client = ">=25.8.3"
 packaging = ">=20.4"
 python-dateutil = ">=2.7.0"
 python-jose = ">=3.3.0"
@@ -1404,14 +1404,14 @@ yarl = ">=1.10"
 
 [[package]]
 name = "neuro-config-client"
-version = "25.2.0"
+version = "25.8.3"
 description = "Internal client for Neu.ro config service"
 optional = false
 python-versions = ">=3.9"
 groups = ["main"]
 files = [
-    {file = "neuro_config_client-25.2.0-py3-none-any.whl", hash = "sha256:4ba16ef613ce0e44bdade6ff7088046a84e0e8f6e8cb22a7c8f7cf15b4afe0d0"},
-    {file = "neuro_config_client-25.2.0.tar.gz", hash = "sha256:0d74c589620870155c441623ae8acb275312cdddeac43f16503d8221663e64f9"},
+    {file = "neuro_config_client-25.8.3-py3-none-any.whl", hash = "sha256:d353cca45d75e6a9b66209db1617679048241f28d7062eef1258226bbe386562"},
+    {file = "neuro_config_client-25.8.3.tar.gz", hash = "sha256:66523b55dc03a67734bef9868364380e8808f4b21f26b3378cb0b43300a40326"},
 ]
 
 [package.dependencies]
@@ -2362,4 +2362,4 @@ type = ["pytest-mypy"]
 [metadata]
 lock-version = "2.1"
 python-versions = "^3.9.0"
-content-hash = "0c2f9ec308ff9aabbddbe6f25ea900d81a034f8b44cfb8ef11ac1890dd698ebd"
+content-hash = "1ddd4de6e9f09cbf2606da9ad2b944aa8618f84f3d57fd4bf0d595e80e27932b"
