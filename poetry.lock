@@ -203,18 +203,18 @@ typing-extensions = {version = ">=4.2", markers = "python_version < \"3.13\""}
 
 [[package]]
 name = "apolo-cli"
-version = "25.8.0"
+version = "25.8.1"
 description = "Apolo Platform client"
 optional = false
 python-versions = ">=3.9.0"
 groups = ["main"]
 files = [
-    {file = "apolo_cli-25.8.0-py3-none-any.whl", hash = "sha256:a6a6afca49e20385bab8b3d910e91cbdb362a279fff392ad0ff4efcd41ec914f"},
-    {file = "apolo_cli-25.8.0.tar.gz", hash = "sha256:364d46d44dcb9c2002f1aee12452d832e266ac099b6d85f72bcfe6d666a1b828"},
+    {file = "apolo_cli-25.8.1-py3-none-any.whl", hash = "sha256:5c51324f2128522d1298f23ff13ac9a96c332020627ebf40194e9dae12d08ab1"},
+    {file = "apolo_cli-25.8.1.tar.gz", hash = "sha256:e20bede5282a910c0625760e001499a0ec028b8e8a4316f242ebcaa5eb5b3209"},
 ]
 
 [package.dependencies]
-apolo-sdk = ">=25.8.0"
+apolo-sdk = ">=25.8.1"
 async-timeout = {version = ">=4.0.0", markers = "python_version < \"3.11\""}
 certifi = "*"
 click = ">=8.0"
@@ -2362,4 +2362,4 @@ type = ["pytest-mypy"]
 [metadata]
 lock-version = "2.1"
 python-versions = "^3.9.0"
-content-hash = "1ddd4de6e9f09cbf2606da9ad2b944aa8618f84f3d57fd4bf0d595e80e27932b"
+content-hash = "634fd50da2feb17be50298fb00e22a935ba8e84f735cd7ca3daf056268c861b4"
