@@ -5,6 +5,29 @@
 
 [comment]: # (release notes start)
 
+Apolo 25.9.0 (2025-09-01)
+=========================
+
+# Apolo SDK/CLI 25.8.1 (2025-08-14)
+
+### Features
+
+- Support GPU memory configuration in resource presets. ([#3317](https://github.com/neuro-inc/apolo-cli/issues/3317))
+
+
+# Apolo SDK/CLI 25.8.0 (2025-08-08)
+
+### Features
+
+- Add yaml language server comment to app generation template. ([#3304](https://github.com/neuro-inc/apolo-cli/issues/3304))
+
+### Bugfixes
+
+- Handle wrong template name. ([#3296](https://github.com/neuro-inc/apolo-cli/issues/3296))
+- Fix markup for *login* command. ([#3307](https://github.com/neuro-inc/apolo-cli/issues/3307))
+
+
+
 Apolo 25.7.1 (2025-07-11)
 =========================
 
