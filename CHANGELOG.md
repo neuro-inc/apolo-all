@@ -5,6 +5,27 @@
 
 [comment]: # (release notes start)
 
+Apolo 25.9.1 (2025-09-05)
+=========================
+
+apolo-extras v25.9.0 (2025-09-05)
+=================================
+
+
+No significant changes.
+
+
+apolo-extras v25.8.0 (2025-08-27)
+=================================
+
+
+Misc
+----
+
+- [#699](https://github.com/neuromation/neuro-extras/issues/699)
+
+
+
 Apolo 25.9.0 (2025-09-01)
 =========================
 
