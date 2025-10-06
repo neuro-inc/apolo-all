@@ -52,7 +52,7 @@ python = "^3.9.0"
 apolo-cli = "25.9.1"
 apolo-extras = "25.9.0"
 apolo-flow = "24.12.1"
-certifi = "2025.8.3"
+certifi = "2025.10.5"
 apolo-sdk = "25.9.1"
 
 [tool.poetry.group.dev.dependencies]
