@@ -9,15 +9,15 @@ from pathlib import Path
 from typing import Optional
 
 
-UPSTREAMS = {
-    "neuro-cli": "apolo-cli",
-    "neuro-extras": "apolo-extras",
-    "neuro-flow": "apolo-flow",
-}
+UPSTREAMS = [
+    "apolo-cli",
+    "apolo-extras",
+    "apolo-flow",
+]
 
 
 def update_repos() -> None:
-    for upstream, dist in UPSTREAMS.items():
+    for upstream in UPSTREAMS:
         cloned = Path("cloned")
         cloned.mkdir(parents=True, exist_ok=True)
         path = cloned / upstream
@@ -44,17 +44,17 @@ def update_repos() -> None:
             ["git", "config", "advice.detachedHead", "false"], check=True, cwd=str(path)
         )
 
-        ver = version(dist)
+        ver = version(upstream)
         subprocess.run(["git", "checkout", f"v{ver}"], check=True, cwd=str(path))
 
 
-def fetch(name: str, dist: str) -> Optional[str]:
-    changelog = Path("cloned") / name / "CHANGELOG.md"
+def fetch(upstream: str) -> Optional[str]:
+    changelog = Path("cloned") / upstream / "CHANGELOG.md"
     txt = changelog.read_text()
     TEMPLATE = "[comment]: # (towncrier release notes start)\n"
     idx = txt.index(TEMPLATE)
     right = txt[idx + len(TEMPLATE) :]
-    old = Path(dist + ".txt")
+    old = Path(upstream + ".txt")
     left = old.read_text()
     matcher = SequenceMatcher(None, left, right)
     for tag, i1, i2, j1, j2 in matcher.get_opcodes():
@@ -79,8 +79,8 @@ def main() -> None:
 
     update_repos()
     changes = []
-    for name, dist in UPSTREAMS.items():
-        ret = fetch(name, dist)
+    for upstream in UPSTREAMS:
+        ret = fetch(upstream)
         if ret is not None:
             changes.append(ret)
 

@@ -7,8 +7,8 @@
 * If there were releases this month, run `$ poetry version patch`, if not upgrade minor version `$ poetry version minor`
 * Run `$ ./tools/update_changelog.py` to update `CHANGELOG.md`.
 * Open `CHANGELOG.md`, make sure that the generated file content looks good. Fix it if needed.
-* Checkout to the branch `$ git checkout -b feature/YOUR-FEATURE` 
-* Commit changed files. Use `Release 1.2.3` commit message
+* Checkout to the branch `$ git switch -c release/vYY.MM.N`, where YY is short form of a year, MM -- month, N -- release number in this month starting with 0.
+* Commit changed files. Use `Release vYY.MM.N` commit message
 * Push commited changes on github using the feature branch.
 * Wait for CI checks finish, make sure that all tests are passed.
 * Merge your PR to master branch.
