@@ -5,6 +5,43 @@
 
 [comment]: # (release notes start)
 
+Apolo 25.11.0 (2025-11-20)
+==========================
+
+# Apolo SDK/CLI 25.11.1 (2025-11-13)
+
+## Features
+
+- Add `apolo app configure` command to update inputs and/or display name of installed application. ([#3387](https://github.com/neuro-inc/apolo-cli/issues/3387))
+- Add `Apps.get_output()` SDK method to retrieve output parameters from installed applications. ([#3388](https://github.com/neuro-inc/apolo-cli/issues/3388))
+
+
+# Apolo SDK/CLI 25.11.0 (2025-11-04)
+
+## Features
+
+- Support resource presets with Nvidia MIG. ([#3369](https://github.com/neuro-inc/apolo-cli/issues/3369))
+
+
+# Apolo SDK/CLI 25.9.1 (2025-09-30)
+
+## Features
+
+- Add `apolo secret get [key]` command to retrieve secret content ([#3351](https://github.com/neuro-inc/apolo-cli/issues/3351))
+
+
+# Apolo SDK/CLI 25.9.0 (2025-09-01)
+
+### Features
+
+- Add force option to app uninstall command. ([#3320](https://github.com/neuro-inc/apolo-cli/issues/3320))
+
+### Bugfixes
+
+- Fix neuro config client dependency issue. ([#3329](https://github.com/neuro-inc/apolo-cli/issues/3329))
+
+
+
 Apolo 25.9.1 (2025-09-05)
 =========================
 
