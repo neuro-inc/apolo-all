@@ -57,7 +57,7 @@ apolo-sdk = "25.12.0"
 
 [tool.poetry.group.dev.dependencies]
 towncrier = ">=24.8,<26.0"
-pytest = "9.0.1"
+pytest = "9.0.2"
 pre-commit = "^4.2.0"
 click = "^8.1.7"
 
