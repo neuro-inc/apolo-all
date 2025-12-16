@@ -236,18 +236,18 @@ typing-extensions = {version = ">=4.2", markers = "python_version < \"3.13\""}
 
 [[package]]
 name = "apolo-cli"
-version = "25.12.0"
+version = "25.12.1"
 description = "Apolo Platform client"
 optional = false
 python-versions = ">=3.10.0"
 groups = ["main"]
 files = [
-    {file = "apolo_cli-25.12.0-py3-none-any.whl", hash = "sha256:55e01a0c0f2e400b0e347a470938f7b77d5e9a82bf2bd3f1a62bbd3fbb4bc521"},
-    {file = "apolo_cli-25.12.0.tar.gz", hash = "sha256:940216ed69635763cfe4452431885cdcd164631e9935974fdb1bc0af352f4259"},
+    {file = "apolo_cli-25.12.1-py3-none-any.whl", hash = "sha256:9e0ce6a59e2977ef376e4126e01d59166b636b7a0bfc2a124a65987a7619b017"},
+    {file = "apolo_cli-25.12.1.tar.gz", hash = "sha256:c5ab7bdf8e15f138b58dcef0dc1dfeb32ca06fc76e58621c5f0d1d1aa60fe793"},
 ]
 
 [package.dependencies]
-apolo-sdk = ">=25.12.0"
+apolo-sdk = ">=25.12.1"
 async-timeout = {version = ">=4.0.0", markers = "python_version < \"3.11\""}
 certifi = "*"
 click = ">=8.0"
@@ -305,25 +305,25 @@ yarl = ">=1.13"
 
 [[package]]
 name = "apolo-sdk"
-version = "25.12.0"
+version = "25.12.1"
 description = "Apolo SDK"
 optional = false
 python-versions = ">=3.10.0"
 groups = ["main"]
 files = [
-    {file = "apolo_sdk-25.12.0-py3-none-any.whl", hash = "sha256:f463f2eeb6bcc48903697275c9764a38b994fa7616ae7695a4f064703cde175c"},
-    {file = "apolo_sdk-25.12.0.tar.gz", hash = "sha256:ad3aadd3211e8ef6bf9c86464687c836cc5c92ebdabafca04cfab88218eb96ba"},
+    {file = "apolo_sdk-25.12.1-py3-none-any.whl", hash = "sha256:ad9f23e611883b6a7314289ec5ec1a9b16cce7354118dd6082637144f0975098"},
+    {file = "apolo_sdk-25.12.1.tar.gz", hash = "sha256:2ceb63441b790fd4c94a92ac7ea50e8770217bd5fd440cd8f3c3c03b2fe8a26f"},
 ]
 
 [package.dependencies]
-aiobotocore = ">=2.3.0,<3.0"
+aiobotocore = ">=2.3.0,<4.0"
 aiodocker = ">=0.24.0"
 aiohttp = ">=3.11.3"
 azure-storage-blob = ">=12.8.1,<12.9.0 || >12.9.0"
 certifi = "*"
 google-auth = ">=2.0.2"
 importlib_metadata = {version = ">=4.11.4", markers = "python_version < \"3.11\""}
-neuro-admin-client = "25.11.3"
+neuro-admin-client = "25.12.0"
 neuro-config-client = "25.11.0"
 packaging = ">=20.4"
 python-dateutil = ">=2.7.0"
@@ -1478,14 +1478,14 @@ typing-extensions = {version = ">=4.1.0", markers = "python_version < \"3.11\""}
 
 [[package]]
 name = "neuro-admin-client"
-version = "25.11.3"
+version = "25.12.0"
 description = "Internal client for Neu.ro admin service"
 optional = false
 python-versions = ">=3.10"
 groups = ["main"]
 files = [
-    {file = "neuro_admin_client-25.11.3-py3-none-any.whl", hash = "sha256:071d1f2d533ee6628d4b7f0fe788e9275a2d9407816fc97a9d66b0107c920e9c"},
-    {file = "neuro_admin_client-25.11.3.tar.gz", hash = "sha256:0b689bbc68be30d7f19b2fdcd2255268507c37870529f6aae558c09b7a49930a"},
+    {file = "neuro_admin_client-25.12.0-py3-none-any.whl", hash = "sha256:9b23dc96a0279a994ec8e30518fd859d504be241aa4209f90c1c498c561186ce"},
+    {file = "neuro_admin_client-25.12.0.tar.gz", hash = "sha256:0142f412d7a5a708ea9861ce81eabe377c50b02b3d694ff0a5bc5f0461cf1a67"},
 ]
 
 [package.dependencies]
@@ -2652,4 +2652,4 @@ type = ["pytest-mypy"]
 [metadata]
 lock-version = "2.1"
 python-versions = "^3.10.0"
-content-hash = "b3ff68e83a93fcd14d2c8fd16f2a468f87837d6bcb4c693322f4e02424e9d22d"
+content-hash = "5c58bc9ca36a7cf3de523baf35e438894aa1aee32c4b626deb4a2bdfe0540c43"
