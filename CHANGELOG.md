@@ -5,6 +5,17 @@
 
 [comment]: # (release notes start)
 
+Apolo 25.12.1 (2025-12-16)
+==========================
+
+# Apolo SDK/CLI 25.12.0 (2025-12-16)
+
+## Features
+
+- Add `apolo app get-input`, `apolo app get-revisions`, `apolo app rollback` to manage application configuration revisions. ([#3411](https://github.com/neuro-inc/apolo-cli/issues/3411))
+
+
+
 Apolo 25.12.0 (2025-12-04)
 ==========================
 
