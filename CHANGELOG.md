@@ -5,6 +5,17 @@
 
 [comment]: # (release notes start)
 
+Apolo 26.1.0 (2026-01-05)
+=========================
+
+# Apolo SDK/CLI 26.1.0 (2026-01-05)
+
+## Bugfixes
+
+- Add API pagination support for app list / events endpoints. ([#3425](https://github.com/neuro-inc/apolo-cli/issues/3425))
+
+
+
 Apolo 25.12.2 (2025-12-23)
 ==========================
 
