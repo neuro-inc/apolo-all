@@ -1,6 +1,5 @@
 from apolo_sdk import PluginManager
 
-
 APOLO_ALL_UPGRADE = """\
 You are using Apolo-All {old_ver}, however {new_ver} is available.
 You should consider upgrading via the following command:

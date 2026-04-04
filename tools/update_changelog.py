@@ -8,7 +8,6 @@ from importlib.metadata import version
 from pathlib import Path
 from typing import Optional
 
-
 UPSTREAMS = [
     "apolo-cli",
     "apolo-extras",
