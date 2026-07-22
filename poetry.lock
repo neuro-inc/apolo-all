@@ -316,19 +316,19 @@ toml = ">=0.10.0"
 
 [[package]]
 name = "apolo-flow"
-version = "24.12.1"
+version = "26.7.1"
 description = "Pipelines system for Apolo MLOps platform"
 optional = false
-python-versions = ">=3.9.0"
+python-versions = ">=3.10.0"
 groups = ["main"]
 files = [
-    {file = "apolo_flow-24.12.1-py3-none-any.whl", hash = "sha256:e625d24517d47aa7c1c54746d9a5483aae24f5ae9fb21744842768430e39b643"},
-    {file = "apolo_flow-24.12.1.tar.gz", hash = "sha256:46e64af7ee9afb46e56093f0cd4cb8f876ee3e2edf8978847e879f29cb9dbadf"},
+    {file = "apolo_flow-26.7.1-py3-none-any.whl", hash = "sha256:26437ff5368804652d0197d4d933953c56c8fbe8a7670bd9a91a3432e522f403"},
+    {file = "apolo_flow-26.7.1.tar.gz", hash = "sha256:513d19da65ecd153d249338573c99b4534e7d62f94c80f26b32d222f2f87a936"},
 ]
 
 [package.dependencies]
-apolo-cli = ">=24.12.1"
-apolo-extras = ">=24.10.0"
+apolo-cli = ">=26.3.0"
+apolo-extras = ">=25.9.0"
 click = ">=8.0"
 funcparserlib = ">=1.0.0"
 graphviz = ">=0.20.3"
@@ -2759,4 +2759,4 @@ type = ["pytest-mypy"]
 [metadata]
 lock-version = "2.1"
 python-versions = "^3.10.0"
-content-hash = "bc5b5e3f387e3d7b4b779a754f5296fc537979d8f2fcc64447267bc47993f05f"
+content-hash = "74088e2428ee6dd83e0c147dc99f2aacdec840219c4f99d68ae5b7e68294a3de"
