@@ -51,7 +51,7 @@ neuro-flow = "apolo_flow.cli:main"
 python = "^3.10.0"
 apolo-cli = "26.3.0"
 apolo-extras = "25.9.0"
-apolo-flow = "24.12.1"
+apolo-flow = "26.7.1"
 certifi = "2026.6.17"
 apolo-sdk = "26.3.0"
 
