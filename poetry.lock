@@ -2,28 +2,29 @@
 
 [[package]]
 name = "aiobotocore"
-version = "2.22.0"
+version = "3.9.0"
 description = "Async client for aws services using botocore and aiohttp"
 optional = false
-python-versions = ">=3.8"
+python-versions = ">=3.10"
 groups = ["main"]
 files = [
-    {file = "aiobotocore-2.22.0-py3-none-any.whl", hash = "sha256:b4e6306f79df9d81daff1f9d63189a2dbee4b77ce3ab937304834e35eaaeeccf"},
-    {file = "aiobotocore-2.22.0.tar.gz", hash = "sha256:11091477266b75c2b5d28421c1f2bc9a87d175d0b8619cb830805e7a113a170b"},
+    {file = "aiobotocore-3.9.0-py3-none-any.whl", hash = "sha256:7354659eac9ba6034675b3ea178330b7de97c45989d6fda1bf01d3da167b6135"},
+    {file = "aiobotocore-3.9.0.tar.gz", hash = "sha256:5d344e97c518b010bea167c7f7ba4f9e785f9d2b8ac7af4fd00846c62f2c0a10"},
 ]
 
 [package.dependencies]
-aiohttp = ">=3.9.2,<4.0.0"
+aiohttp = ">=3.14.0,<4.0.0"
 aioitertools = ">=0.5.1,<1.0.0"
-botocore = ">=1.37.2,<1.37.4"
+botocore = ">=1.43.3,<1.43.57"
 jmespath = ">=0.7.1,<2.0.0"
 multidict = ">=6.0.0,<7.0.0"
 python-dateutil = ">=2.1,<3.0.0"
-wrapt = ">=1.10.10,<2.0.0"
+typing-extensions = {version = ">=4.14.0,<5.0.0", markers = "python_version < \"3.11\""}
+wrapt = ">=1.10.10,<3.0.0"
 
 [package.extras]
-awscli = ["awscli (>=1.38.2,<1.38.4)"]
-boto3 = ["boto3 (>=1.37.2,<1.37.4)"]
+httpx = ["anyio (>=4.11.0,<5)", "httpx (>=0.25.1,<0.29)"]
+httpx2 = ["anyio (>=4.11.0,<5)", "httpx2 (>=2.0,<3.0.0)"]
 
 [[package]]
 name = "aiodns"
@@ -341,18 +342,18 @@ yarl = ">=1.13"
 
 [[package]]
 name = "apolo-sdk"
-version = "26.3.0"
+version = "26.7.2"
 description = "Apolo SDK"
 optional = false
 python-versions = ">=3.10.0"
 groups = ["main"]
 files = [
-    {file = "apolo_sdk-26.3.0-py3-none-any.whl", hash = "sha256:edf368ec9022e267b5f388ed1cbd6093e92adb777348f84423437eccbe9d45ce"},
-    {file = "apolo_sdk-26.3.0.tar.gz", hash = "sha256:e889b27478620ef5054b2aeb36a5670be873e1b51d768b45c1182e5745ea0142"},
+    {file = "apolo_sdk-26.7.2-py3-none-any.whl", hash = "sha256:74a72c09cce5aa6de8791d77ecebcde5bedb68fd0180f07e46e393d13d9df792"},
+    {file = "apolo_sdk-26.7.2.tar.gz", hash = "sha256:86a5bb1822cc3f2e6a83b5e0fc9626ea96459df79035ad22f5957a77d2acb339"},
 ]
 
 [package.dependencies]
-aiobotocore = ">=2.3.0,<4.0"
+aiobotocore = ">=3.0.0,<4.0"
 aiodocker = ">=0.24.0"
 aiohttp = ">=3.11.3"
 azure-storage-blob = ">=12.8.1,<12.9.0 || >12.9.0"
@@ -569,23 +570,23 @@ files = [
 
 [[package]]
 name = "botocore"
-version = "1.37.3"
+version = "1.43.56"
 description = "Low-level, data-driven core of boto 3."
 optional = false
-python-versions = ">=3.8"
+python-versions = ">=3.10"
 groups = ["main"]
 files = [
-    {file = "botocore-1.37.3-py3-none-any.whl", hash = "sha256:d01bd3bf4c80e61fa88d636ad9f5c9f60a551d71549b481386c6b4efe0bb2b2e"},
-    {file = "botocore-1.37.3.tar.gz", hash = "sha256:fe8403eb55a88faf9b0f9da6615e5bee7be056d75e17af66c3c8f0a3b0648da4"},
+    {file = "botocore-1.43.56-py3-none-any.whl", hash = "sha256:aafc741f1b10f6fd63253eaf6ea029680c1ff436d87e1b8969d62aefa0c76976"},
+    {file = "botocore-1.43.56.tar.gz", hash = "sha256:6c01f85f0ff9863076f4c761e74ee3aa96c5ccc1ad09fc1efd62ef8f2d22bf57"},
 ]
 
 [package.dependencies]
 jmespath = ">=0.7.1,<2.0.0"
 python-dateutil = ">=2.1,<3.0.0"
-urllib3 = {version = ">=1.25.4,<2.2.0 || >2.2.0,<3", markers = "python_version >= \"3.10\""}
+urllib3 = ">=1.25.4,<2.2.0 || >2.2.0,<3"
 
 [package.extras]
-crt = ["awscrt (==0.23.8)"]
+crt = ["awscrt (==0.36.0)"]
 
 [[package]]
 name = "brotli"
@@ -2759,4 +2760,4 @@ type = ["pytest-mypy"]
 [metadata]
 lock-version = "2.1"
 python-versions = "^3.10.0"
-content-hash = "2a04b1752fa97094c17f871ff50d7052b6fd7980bdf4f83193b4936be430ce2e"
+content-hash = "90b2fbabd48709c6a565bbb3ad60a744d9508145c3d1a3bcad0ded12ff886127"
