@@ -5,6 +5,129 @@
 
 [comment]: # (release notes start)
 
+Apolo 26.8.0 (2026-08-04)
+=========================
+
+# Apolo Flow 26.7.2 (2026-07-30)
+
+## Bugfixes
+
+- Update apolo-cli to 26.7.1 ([#1364](https://github.com/neuro-inc/neuro-flow/issues/1364))
+
+
+# Apolo Flow 26.7.1 (2026-07-22)
+
+## Features
+
+- Add a supported async lifecycle factory for constructing `FlowAPI` with an explicit
+  Apolo context without changing the user's saved context.
+
+
+# Apolo Flow 26.7.0 (2026-07-22)
+
+## Features
+
+- Added programatic API wrapper for apolo-flow: machine-readable facade for Flow project. ([#1338](https://github.com/neuro-inc/neuro-flow/issues/1338))
+
+## Bugfixes
+
+- Fix rendering nested subgraphs in batch graph output. ([#910](https://github.com/neuro-inc/neuro-flow/issues/910))
+
+## Deprecations and Removals
+
+- Drop deprecated functionality:
+  * `flow.id` context variable (use `flow.flow_id` instead)
+  * `project.role` from project definition (was no-op field)
+  * `args` command-line argument from *live* mode (use `--params` instead)
+
+  ([#1177](https://github.com/neuro-inc/neuro-flow/issues/1177))
+
+
+# Apolo Flow 24.12.1 (2024-12-16)
+
+### Features
+
+- Prefer `.apolo` over `.neuro` for config files and logs. ([#1192](https://github.com/neuro-inc/neuro-flow/issues/1192))
+
+
+# Apolo Flow 24.10.0 (2024-10-23)
+
+### Features
+
+- Provide `flow.username` in both *live* and *batch* modes. ([#1175](https://github.com/neuro-inc/neuro-flow/issues/1175))
+
+
+# Apolo SDK/CLI 26.7.2 (2026-07-30)
+
+## Bugfixes
+
+- Fix "aiobocotore >=3.8" compatibility. ([#3493](https://github.com/neuro-inc/apolo-cli/issues/3493))
+
+
+# Apolo SDK/CLI 26.7.1 (2026-07-30)
+
+## Bugfixes
+
+- Fix `apolo help` command exit code. ([#3492](https://github.com/neuro-inc/apolo-cli/issues/3492))
+
+
+# Apolo SDK/CLI 26.7.0 (2026-07-30)
+
+## Bugfixes
+
+- Fixed `apolo image rm` and `apolo image size` failing with `ResourceNotFound` for images stored as OCI manifests (e.g. built by kaniko via `apolo-flow build`): all standard manifest media types are now accepted when resolving image digests. ([#3489](https://github.com/neuro-inc/apolo-cli/issues/3489))
+
+## Misc
+
+- [#3475](https://github.com/neuro-inc/apolo-cli/issues/3475)
+
+
+# Apolo SDK/CLI 26.3.0 (2026-03-31)
+
+## Features
+
+- Add support for vcluster-based projects and their kubernetes configurations. ([#3430](https://github.com/neuro-inc/apolo-cli/issues/3430))
+- Support ``--has-virtual-kube`` option for project creation, show this flag when printing the project's information. ([#3435](https://github.com/neuro-inc/apolo-cli/issues/3435))
+- Expose apps configs (output proxy URL and lauchpad tweaks) at `client.config.clusters[<cluster-name>].apps`. ([#3461](https://github.com/neuro-inc/apolo-cli/issues/3461))
+
+
+apolo_extras 26.8.0 (2026-08-04)
+================================
+
+
+Features
+--------
+
+
+- Add Python 3.14, drop Python 3.10 support. ([#794](https://github.com/neuro-inc/apolo-extras/issues/794))
+
+
+Bugfixes
+--------
+
+
+- Fixed `image build` reporting success and exiting with code 0 when the builder job failed. The builder job is now started via the SDK and its result is taken from the job status API instead of the exit code of the attached `apolo job run` subprocess, which is 0 after a terminal detach or a dropped attach connection. ([#773](https://github.com/neuro-inc/apolo-extras/issues/773))
+
+- Fixed `data transfer` reporting success when the platform-to-platform copy job failed. The copy job is now started via the SDK and its result is taken from the job status API instead of the exit code of the attached `apolo run` subprocess. ([#774](https://github.com/neuro-inc/apolo-extras/issues/774))
+
+
+# Apolo MCP 26.8.1 (2026-08-04)
+
+### Misc
+
+- [#9](https://github.com/neuro-inc/apolo-mcp/issues/9)
+
+
+# Apolo MCP 26.8.0 (2026-08-03)
+
+### Features
+
+- Establish the standalone MCP server with typed Apolo tools, explicit context, released
+  Flow integration, protected credential sinks, operational skills, code-derived docs,
+  packaged Codex and Claude Code skill installation, a declarative capability catalog,
+  and calendar-based release tooling. ([#1](https://github.com/neuro-inc/apolo-mcp/issues/1))
+
+
 Apolo 26.1.0 (2026-01-05)
 =========================
 
