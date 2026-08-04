@@ -8,7 +8,6 @@ authors = [
 ]
 license = "Apache-2.0"
 keywords = [
-    "neu.ro",
     "mlops",
     "apolo",
 ]

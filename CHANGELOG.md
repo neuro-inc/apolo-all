@@ -111,14 +111,14 @@ Bugfixes
 - Fixed `data transfer` reporting success when the platform-to-platform copy job failed. The copy job is now started via the SDK and its result is taken from the job status API instead of the exit code of the attached `apolo run` subprocess. ([#774](https://github.com/neuro-inc/apolo-extras/issues/774))
 
 
-## 26.8.1 (2026-08-04)
+# Apolo MCP 26.8.1 (2026-08-04)
 
 ### Misc
 
 - [#9](https://github.com/neuro-inc/apolo-mcp/issues/9)
 
 
-## 26.8.0 (2026-08-03)
+# Apolo MCP 26.8.0 (2026-08-03)
 
 ### Features
 
