@@ -66,3 +66,19 @@ jobs:
           .e2e-venv/bin/python -m pip check
       - name: Test installed package
         run: .e2e-venv/bin/python tests/e2e_installation.py
+
+  check:
+    # This job does nothing and is only used for branch protection.
+    name: Check
+    needs: [lint, e2e]
+    if: ${{ always() }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check
+        if: ${{ needs.lint.result != 'success' || needs.e2e.result != 'success' }}
+        run: |
+          echo "lint result: ${{ needs.lint.result }}"
+          echo "e2e result: ${{ needs.e2e.result }}"
+          exit 1
+      - name: Success
+        run: echo "All checks have passed"
