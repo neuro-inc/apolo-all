@@ -1,18 +1,18 @@
 #!/usr/bin/env python3
-import click
 import datetime
 import subprocess
 import sys
 from difflib import SequenceMatcher
 from importlib.metadata import version
 from pathlib import Path
-from typing import Optional
 
+import click
 
 UPSTREAMS = [
     "apolo-cli",
     "apolo-extras",
     "apolo-flow",
+    "apolo-mcp",
 ]
 
 
@@ -48,7 +48,7 @@ def update_repos() -> None:
         subprocess.run(["git", "checkout", f"v{ver}"], check=True, cwd=str(path))
 
 
-def fetch(upstream: str) -> Optional[str]:
+def fetch(upstream: str) -> str | None:
     changelog = Path("cloned") / upstream / "CHANGELOG.md"
     txt = changelog.read_text()
     TEMPLATE = "[comment]: # (towncrier release notes start)\n"
