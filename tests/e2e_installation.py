@@ -107,9 +107,3 @@ def test_cli_versions() -> None:
         assert expected_version in output, (
             f"{cli} --version did not report {expected_version!r}:\n{output}"
         )
-
-
-if __name__ == "__main__":
-    test_distribution_metadata()
-    test_clis_start()
-    test_cli_versions()
