@@ -1,4 +1,53 @@
 
+# Apolo Flow 26.7.2 (2026-07-30)
+
+## Bugfixes
+
+- Update apolo-cli to 26.7.1 ([#1364](https://github.com/neuro-inc/neuro-flow/issues/1364))
+
+
+# Apolo Flow 26.7.1 (2026-07-22)
+
+## Features
+
+- Add a supported async lifecycle factory for constructing `FlowAPI` with an explicit
+  Apolo context without changing the user's saved context.
+
+
+# Apolo Flow 26.7.0 (2026-07-22)
+
+## Features
+
+- Added programatic API wrapper for apolo-flow: machine-readable facade for Flow project. ([#1338](https://github.com/neuro-inc/neuro-flow/issues/1338))
+
+## Bugfixes
+
+- Fix rendering nested subgraphs in batch graph output. ([#910](https://github.com/neuro-inc/neuro-flow/issues/910))
+
+## Deprecations and Removals
+
+- Drop deprecated functionality:
+  * `flow.id` context variable (use `flow.flow_id` instead)
+  * `project.role` from project definition (was no-op field)
+  * `args` command-line argument from *live* mode (use `--params` instead)
+
+  ([#1177](https://github.com/neuro-inc/neuro-flow/issues/1177))
+
+
+# Apolo Flow 24.12.1 (2024-12-16)
+
+### Features
+
+- Prefer `.apolo` over `.neuro` for config files and logs. ([#1192](https://github.com/neuro-inc/neuro-flow/issues/1192))
+
+
+# Apolo Flow 24.10.0 (2024-10-23)
+
+### Features
+
+- Provide `flow.username` in both *live* and *batch* modes. ([#1175](https://github.com/neuro-inc/neuro-flow/issues/1175))
+
+
 # Apolo Flow 24.8.0 (2024-10-08)
 
 No significant changes.
@@ -26,14 +75,14 @@ No significant changes.
 
   ```
   images:
-    image_a:
-      ref: image:imagea
-      context: dir
-      dockerfile: dir/Dockerfile
-      extra_kaniko_args: >-
-        --reproducible
-        --cache-ttl=1h
-        --single-snapshot
+	image_a:
+	  ref: image:imagea
+	  context: dir
+	  dockerfile: dir/Dockerfile
+	  extra_kaniko_args: >-
+		--reproducible
+		--cache-ttl=1h
+		--single-snapshot
   ```
 
   More details on available arguments could be found in [official Kaniko documentation](https://github.com/GoogleContainerTools/kaniko?tab=readme-ov-file#additional-flags). ([#1110](https://github.com/neuro-inc/neuro-flow/issues/1110))
@@ -59,7 +108,7 @@ No significant changes.
   kind: batch
   life_span: 30d
   tasks:
-    ...
+	...
   ``` ([#1075](https://github.com/neuro-inc/neuro-flow/issues/1075))
 
 
@@ -91,7 +140,7 @@ Features
 - Added `hash_files_relative` function to expression, it works same as `hash_files` but requires additional leading
   parameters that defines directory to glob over. It can be used to glob over action files:
   ```
-    ${{ hash_files_relative(flow.action_path, "**/pattern/here/**/*.py", "other/**/pattern")
+	${{ hash_files_relative(flow.action_path, "**/pattern/here/**/*.py", "other/**/pattern")
   ``` ([#904](https://github.com/neuro-inc/neuro-flow/issues/904))
 
 
@@ -182,16 +231,16 @@ Features
 
   ```
   matrix:
-    old_way_key: ["1", "2", "3"]
-    new_way_key: ${{ ["1", "2", "3"] }}
+	old_way_key: ["1", "2", "3"]
+	new_way_key: ${{ ["1", "2", "3"] }}
   ```
 
   This can be helpful when used together with new `range()` function:
 
   ```
   matrix:
-    old_way_key: [0, 1, 2, 3]
-    new_way_key: ${{ range(4) }}
+	old_way_key: [0, 1, 2, 3]
+	new_way_key: ${{ range(4) }}
   ```
 
   The `range()` function supports same parameters as python's `range()`, but it returns list.
@@ -203,16 +252,16 @@ Features
 
   ```
   matrix:
-    old_way_key: ["k1", "k2", "k3"]
-    new_way_key: ${{ [fmt("k{}", str(it)) for it in range(1, 4)] }}
+	old_way_key: ["k1", "k2", "k3"]
+	new_way_key: ${{ [fmt("k{}", str(it)) for it in range(1, 4)] }}
   ```
 
   You can also filter some values in comprehension same way as in python:
 
   ```
   matrix:
-    old_way_key: [0, 4, 16]
-    new_way_key: ${{ [it * it for it in range(1, 5) if it % 2 == 0] }}
+	old_way_key: [0, 4, 16]
+	new_way_key: ${{ [it * it for it in range(1, 5) if it % 2 == 0] }}
   ``` ([#741](https://github.com/neuro-inc/neuro-flow/issues/741))
 
 
