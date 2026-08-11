@@ -1,6 +1,6 @@
 [project]
 name = "apolo-all"
-version = "26.8.0"
+version = "26.8.1"
 description = "Combo package for installing all Apolo command line tools by 'pipx install apolo-all' command"
 readme = "README.md"
 authors = [
@@ -50,8 +50,8 @@ packages = [
 
 [tool.poetry.dependencies]
 python = "^3.11.0"
-apolo-cli = "26.7.2"
-apolo-sdk = "26.7.2"
+apolo-cli = "26.8.0"
+apolo-sdk = "26.8.0"
 apolo-extras = "26.8.0"
 apolo-flow = "26.7.2"
 apolo-mcp = "26.8.1"
