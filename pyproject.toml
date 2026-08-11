@@ -1,6 +1,6 @@
 [project]
 name = "apolo-all"
-version = "26.8.0"
+version = "26.8.1"
 description = "Combo package for installing all Apolo command line tools by 'pipx install apolo-all' command"
 readme = "README.md"
 authors = [
