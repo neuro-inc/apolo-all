@@ -60,7 +60,7 @@ certifi = "2026.7.22"
 [tool.poetry.group.dev.dependencies]
 towncrier = ">=24.8,<26.0"
 pytest = "9.1.1"
-pre-commit = "^4.2.0"
+pre-commit = "^4.6.2"
 click = "^8.1.7"
 
 [tool.ruff]
