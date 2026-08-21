@@ -5,6 +5,21 @@
 
 [comment]: # (release notes start)
 
+Apolo 26.8.2 (2026-08-21)
+=========================
+
+# Apolo SDK/CLI 26.8.1 (2026-08-21)
+
+## Features
+
+- Applying a config written for another version of the same app with `apolo app configure` no longer fails on a version mismatch. Fields the installed version does not have are named instead. ([#3522](https://github.com/neuro-inc/apolo-cli/issues/3522))
+
+## Bugfixes
+
+- Align websockets heartbeat interval to connect with platform-monitoring. ([#3515](https://github.com/neuro-inc/apolo-cli/issues/3515))
+
+
+
 Apolo 26.8.1 (2026-08-11)
 =========================
 
