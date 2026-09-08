@@ -58,7 +58,7 @@ apolo-mcp = "26.8.1"
 certifi = "2026.7.22"
 
 [tool.poetry.group.dev.dependencies]
-towncrier = ">=24.8,<26.0"
+towncrier = ">=26.9.0,<27.0"
 pytest = "9.1.1"
 pre-commit = "^4.6.2"
 click = "^8.5.0"
