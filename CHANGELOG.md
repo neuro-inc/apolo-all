@@ -5,6 +5,22 @@
 
 [comment]: # (release notes start)
 
+Apolo 26.11.0 (2026-11-02)
+==========================
+
+# Apolo SDK/CLI 26.11.0 (2026-11-02)
+
+## Bugfixes
+
+- Fix `apolo admin add-project` crashing with `TypeError: add_project() got an unexpected keyword argument 'no_virtual_kube'`. ([#3571](https://github.com/neuro-inc/apolo-cli/issues/3571))
+
+
+# Apolo SDK/CLI 26.10.0 (2026-10-29)
+
+No significant changes.
+
+
+
 Apolo 26.9.0 (2026-09-29)
 =========================
 
