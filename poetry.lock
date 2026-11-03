@@ -344,18 +344,18 @@ trio = ["trio (>=0.32.0)"]
 
 [[package]]
 name = "apolo-cli"
-version = "26.9.0"
+version = "26.11.1"
 description = "Apolo Platform client"
 optional = false
-python-versions = ">=3.10.0"
+python-versions = ">=3.12.0"
 groups = ["main"]
 files = [
-    {file = "apolo_cli-26.9.0-py3-none-any.whl", hash = "sha256:8e3a4004377e7e895cc495e686030cd72c15329aa22ad055cc539817e52c2465"},
-    {file = "apolo_cli-26.9.0.tar.gz", hash = "sha256:14a82c56846373ba77d2e774f2a9afa187e2a175a83b939975fe2db0aacd94ec"},
+    {file = "apolo_cli-26.11.1-py3-none-any.whl", hash = "sha256:88a29bee99a173c969d63eefa0c532d8904321c61977d9bf3de6efc9aa7a98b8"},
+    {file = "apolo_cli-26.11.1.tar.gz", hash = "sha256:100c407b3621542edab46ab51ecbe90104b3a24585bf914665bf50e839dd39c1"},
 ]
 
 [package.dependencies]
-apolo-sdk = ">=26.9.0"
+apolo-sdk = ">=26.11.1"
 certifi = "*"
 click = ">=8.3"
 humanize = ">=3.3"
@@ -369,37 +369,38 @@ wcwidth = ">=0.1.7"
 
 [[package]]
 name = "apolo-extras"
-version = "26.8.0"
+version = "26.11.1"
 description = "Tools and commands extending the Apolo CLI"
 optional = false
-python-versions = ">=3.11"
+python-versions = ">=3.12"
 groups = ["main"]
 files = [
-    {file = "apolo_extras-26.8.0-py3-none-any.whl", hash = "sha256:81fdb167bd1c50717e3cc06467c79019caaf46f37c7f66c5e0ba60cc1bca1334"},
-    {file = "apolo_extras-26.8.0.tar.gz", hash = "sha256:c502c30bcbaf148cef4c4763cca3aad21e3592029c2c7f68728013ad2094ae91"},
+    {file = "apolo_extras-26.11.1-py3-none-any.whl", hash = "sha256:e77662928652fa0664f42c4842c5d3a2bcdc2b2f577d9f8416148e0d346dc5b3"},
+    {file = "apolo_extras-26.11.1.tar.gz", hash = "sha256:284ac730bd14d5cd381c78384e3d9f9d7a51c5ddcbd66e4edf65da08a714de7e"},
 ]
 
 [package.dependencies]
-apolo-cli = ">=26.7.1"
+apolo-cli = ">=26.11.1"
+apolo-sdk = ">=26.11.1"
 click = ">=8.4"
 pyyaml = ">=6.0"
 toml = ">=0.10.0"
 
 [[package]]
 name = "apolo-flow"
-version = "26.7.2"
+version = "26.11.0"
 description = "Pipelines system for Apolo MLOps platform"
 optional = false
-python-versions = ">=3.11.0"
+python-versions = ">=3.12"
 groups = ["main"]
 files = [
-    {file = "apolo_flow-26.7.2-py3-none-any.whl", hash = "sha256:a9ad6386573420aadc05fbb5f4e4c8df8dc5ba34905c2a1b1a59fb7d8251f0ee"},
-    {file = "apolo_flow-26.7.2.tar.gz", hash = "sha256:458aef331eaf3f5266746a66d6e0ecbdff7a7525b0bb1de0e6213bef6e41072f"},
+    {file = "apolo_flow-26.11.0-py3-none-any.whl", hash = "sha256:f1cac9f7df4bd084468f08dcb3f5639f125f83f4e82ec3e086dfbfbe13aba12c"},
+    {file = "apolo_flow-26.11.0.tar.gz", hash = "sha256:f7b6ba384f9270670eb29cfe7571bbb0e3dfc2aaae38172cdee45c451877bbb6"},
 ]
 
 [package.dependencies]
-apolo-cli = ">=26.7.1"
-apolo-extras = ">=25.9.0"
+apolo-cli = ">=26.11.1"
+apolo-extras = ">=26.11.0"
 click = ">=8.4"
 funcparserlib = ">=1.0.0"
 graphviz = ">=0.20.3"
@@ -412,14 +413,14 @@ yarl = ">=1.13"
 
 [[package]]
 name = "apolo-mcp"
-version = "26.8.1"
+version = "26.11.0"
 description = "MCP server for the Apolo platform"
 optional = false
 python-versions = ">=3.11"
 groups = ["main"]
 files = [
-    {file = "apolo_mcp-26.8.1-py3-none-any.whl", hash = "sha256:72e938f2314d2d7ff085b9da6da9b2b9b178360a0a81b13c094f0df56ea5776b"},
-    {file = "apolo_mcp-26.8.1.tar.gz", hash = "sha256:5ac49eb8cef9dfcfec24005e2553eac3a507f18dfa17f06afc377f3fcdbbe525"},
+    {file = "apolo_mcp-26.11.0-py3-none-any.whl", hash = "sha256:48a8fb203a478395ebe3bbf9804ea1c10c0b1afdd1ec39cb0802efda189d9d6e"},
+    {file = "apolo_mcp-26.11.0.tar.gz", hash = "sha256:296c48830cce12ba60331a0de2e144dca8fffc3c2b771981403aef98dbb852d1"},
 ]
 
 [package.dependencies]
@@ -433,14 +434,14 @@ tomlkit = ">=0.13,<1"
 
 [[package]]
 name = "apolo-sdk"
-version = "26.10.0"
+version = "26.11.1"
 description = "Apolo SDK"
 optional = false
-python-versions = ">=3.10.0"
+python-versions = ">=3.12.0"
 groups = ["main"]
 files = [
-    {file = "apolo_sdk-26.10.0-py3-none-any.whl", hash = "sha256:040bdc9b1465e9f12cbebea5c56281a5c7d0f240f66f6f7a35b18b4d23aa6fc5"},
-    {file = "apolo_sdk-26.10.0.tar.gz", hash = "sha256:622de9d4dd0e005b8aa440123f8058f5d7ff1f44a0298e9046a765a592bd824d"},
+    {file = "apolo_sdk-26.11.1-py3-none-any.whl", hash = "sha256:363470b9c0f756bde027b053b16d17d1c122760aa7b7148c09b5c90836078c7b"},
+    {file = "apolo_sdk-26.11.1.tar.gz", hash = "sha256:e905b8d560c86449c005a0edc61374c49406f3af0ea99e1543336befdec49a58"},
 ]
 
 [package.dependencies]
@@ -1473,7 +1474,7 @@ description = "httpx2 transports for Emscripten/Pyodide, backed by the JavaScrip
 optional = false
 python-versions = ">=3.12"
 groups = ["main"]
-markers = "sys_platform == \"emscripten\" and python_version >= \"3.12\""
+markers = "sys_platform == \"emscripten\""
 files = [
     {file = "httpx2_jsfetch-1.0-py3-none-any.whl", hash = "sha256:cb916b707601e69a07721aabc8f3f6659be3a6893bc1ff5c6f9e02241df2da32"},
     {file = "httpx2_jsfetch-1.0.tar.gz", hash = "sha256:70a0e3eabfef7cce5ad9c629f7d01ca05e418f586646f4ddf14782e4c1454c60"},
@@ -3432,5 +3433,5 @@ propcache = ">=0.2.1"
 
 [metadata]
 lock-version = "2.1"
-python-versions = "^3.11.0"
-content-hash = "da41ee706e81cfbe373abe2fb34d1e8e735d049dacbf323d9697a0015f18c1b1"
+python-versions = "^3.12.0"
+content-hash = "254fa2bd4c6bc42528d3f3c0d524fc1d23dc4fbd25bfa2cffe47122958ede695"

@@ -5,6 +5,71 @@
 
 [comment]: # (release notes start)
 
+Apolo 26.11.0 (2026-11-03)
+==========================
+
+## Compatibility
+
+- Require Python 3.12 or newer to match the updated Apolo packages.
+
+
+# Apolo SDK/CLI 26.11.1 (2026-11-03)
+
+No significant changes.
+
+
+# Apolo SDK/CLI 26.11.0 (2026-11-02)
+
+## Bugfixes
+
+- Fix `apolo admin add-project` crashing with `TypeError: add_project() got an unexpected keyword argument 'no_virtual_kube'`. ([#3571](https://github.com/neuro-inc/apolo-cli/issues/3571))
+
+
+# Apolo SDK/CLI 26.10.0 (2026-10-29)
+
+No significant changes.
+
+
+apolo-extras v26.11.1 (2026-11-03)
+==================================
+
+
+## Features
+
+- Add 3.15, drop 3.10 and 3.11 Python support [#856](https://github.com/neuro-inc/apolo-extras/pull/856)
+
+
+
+apolo-extras v26.11.0 (2026-11-02)
+==================================
+
+
+No significant changes.
+
+
+apolo-extras v26.10.0 (2026-10-29)
+==================================
+
+
+No significant changes.
+
+
+# Apolo Flow 26.11.0 (2026-11-03)
+
+## Features
+
+- Add retries while loading actions outputs. ([#1365](https://github.com/neuro-inc/neuro-flow/issues/1365))
+
+
+- Add 3.15, drop 3.10 and 3.11 Python support [#1375](https://github.com/neuro-inc/neuro-flow/issues/1375)
+
+
+# Apolo MCP 26.11.0 (2026-11-03)
+
+No significant changes.
+
+
+
 Apolo 26.9.0 (2026-09-29)
 =========================
 
