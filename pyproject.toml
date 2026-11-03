@@ -13,7 +13,6 @@ keywords = [
 ]
 classifiers = [
     "Programming Language :: Python :: 3",
-    "Programming Language :: Python :: 3.11",
     "Programming Language :: Python :: 3.12",
     "Programming Language :: Python :: 3.13",
     "Programming Language :: Python :: 3.14",
@@ -49,22 +48,22 @@ packages = [
 ]
 
 [tool.poetry.dependencies]
-python = "^3.11.0"
-apolo-cli = "26.11.0"
-apolo-sdk = "26.11.0"
-apolo-extras = "26.8.0"
-apolo-flow = "26.7.2"
-apolo-mcp = "26.8.1"
+python = "^3.12.0"
+apolo-cli = "26.11.1"
+apolo-sdk = "26.11.1"
+apolo-extras = "26.11.1"
+apolo-flow = "26.11.0"
+apolo-mcp = "26.11.0"
 certifi = "2026.10.23"
 
 [tool.poetry.group.dev.dependencies]
 towncrier = ">=26.9.0,<27.0"
-pytest = "9.1.1"
+pytest = "9.2.0"
 pre-commit = "^4.7.0"
 click = "^8.5.0"
 
 [tool.ruff]
-target-version = "py311"
+target-version = "py312"
 line-length = 88
 
 [tool.ruff.lint]
