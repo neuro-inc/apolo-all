@@ -54,7 +54,7 @@ apolo-cli = "26.11.1"
 apolo-sdk = "26.11.2"
 apolo-extras = "26.11.1"
 apolo-flow = "26.11.0"
-apolo-mcp = "26.11.0"
+apolo-mcp = "26.11.2"
 certifi = "2026.10.23"
 
 [tool.poetry.group.dev.dependencies]
