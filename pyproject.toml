@@ -51,7 +51,7 @@ packages = [
 [tool.poetry.dependencies]
 python = "^3.12.0"
 apolo-cli = "26.11.1"
-apolo-sdk = "26.11.1"
+apolo-sdk = "26.11.2"
 apolo-extras = "26.11.1"
 apolo-flow = "26.11.0"
 apolo-mcp = "26.11.0"
