@@ -413,14 +413,14 @@ yarl = ">=1.13"
 
 [[package]]
 name = "apolo-mcp"
-version = "26.11.0"
+version = "26.11.2"
 description = "MCP server for the Apolo platform"
 optional = false
-python-versions = ">=3.11"
+python-versions = ">=3.12"
 groups = ["main"]
 files = [
-    {file = "apolo_mcp-26.11.0-py3-none-any.whl", hash = "sha256:48a8fb203a478395ebe3bbf9804ea1c10c0b1afdd1ec39cb0802efda189d9d6e"},
-    {file = "apolo_mcp-26.11.0.tar.gz", hash = "sha256:296c48830cce12ba60331a0de2e144dca8fffc3c2b771981403aef98dbb852d1"},
+    {file = "apolo_mcp-26.11.2-py3-none-any.whl", hash = "sha256:4466c3cff610855cbb90fa522a87805c020e6963e7205b45e0d1874dcb80ce29"},
+    {file = "apolo_mcp-26.11.2.tar.gz", hash = "sha256:06888daa553721d37406d799adddea85ee752ed3e3d11c89fe5c001624452684"},
 ]
 
 [package.dependencies]
@@ -3434,4 +3434,4 @@ propcache = ">=0.2.1"
 [metadata]
 lock-version = "2.1"
 python-versions = "^3.12.0"
-content-hash = "826adb4ce20ad38456defd3d00ab8a996e98018980f96a5c4a16edb5ea87adec"
+content-hash = "c1a77e25006a38fe06d4bbaf3d9ac54b130127ab4c5f6d22f59ed42289b104f4"
