@@ -55,7 +55,7 @@ apolo-sdk = "26.11.2"
 apolo-extras = "26.11.1"
 apolo-flow = "26.11.0"
 apolo-mcp = "26.11.2"
-certifi = "2026.10.23"
+certifi = "2026.11.20"
 
 [tool.poetry.group.dev.dependencies]
 towncrier = ">=26.9.0,<27.0"
